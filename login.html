@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333!important;
+        }
+        .login{
+            width: 400px;
+            /* height: 300px; */
+            border: 1px solid #e6e6e6;
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            background-color: #fff;
+            border-top: none;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #fafafa;
+            /* position: relative; */
+        }
+        .btn{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+        }
+        input{
+            border: 1px solid #e6e6e6;
+            margin-top: 10px;
+        }
+        button{
+
+            padding: 15px;
+            border: none;
+        }
+        .inputs{
+            width: 100%;
+            padding: 20px;
+        }
+        .inputs input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .forget{
+            padding: 20px;
+           text-align: end;
+            /*float: Yaslamak sağa yasla sola yasla demek */
+        }
+        img{
+            width: 20%;
+        }
+        .buttons{
+            padding: 20px;
+            display: grid;
+            grid-template-areas:
+            "giris giris"
+            "facebook google";
+            gap: 10px;
+        }
+        .giris{
+            background-color: #f27a1a;
+            border: 1px solid #f27a1a;
+            color: white!important;
+            font-weight: bolder;
+            border-radius: 5px;
+            grid-area: giris;
+        }
+        .face{
+            grid-area: facebook;
+            background-color: transparent;
+            border: 1px solid #e6e6e6;
+        }
+        .google{
+            grid-area: google;
+            background-color: transparent;
+            border: 1px solid #e6e6e6;
+        }
+        .devam{
+            padding: 20px;
+            text-align: center;
+        }
+        span{
+            margin-left: 10px;
+        }
+        .fa-brands{
+            border-radius: 0;
+            background-color: blue;
+            color: white!important;
+            padding: 5px;
+        }
+        button:active{
+            background-color: #fff;
+            color: #f27a1a!important;
+        }
+    </style>
+   
+   
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul><li><a href="anasayfa.html">Anasyafa.</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="sepet.html">Sepet.</a></li>
+            <li><a href="fav.html">Favoriler?</a></li>
+            
+        </nav>
+
+
+
+
+        <div class="login">
+            <div class="btn">
+                <button>Giriş Yap</button>
+                <button>Kayıt Ol</button>
+            </div>
+            <div class="inputs">
+                <label for="">E-Posta</label>
+                <input type="email" name="" id="">
+                <label for="">Şifre</label>
+                <input type="password" name="" id="">
+            </div>
+            <div class="forget">
+            
+                <a href="">Şifremi unuttum</a>
+              
+            </div>
+            <div class="buttons">
+                <button class="giris">Giriş Yap</button>
+                <button class="face"><i class="fa-brands fa-facebook"></i><span>Facebook</span></button>
+                <button class="google"> <i class="fa-brands fa-google"></i><span>Google</span></button>
+               
+            </div>
+            <div class="devam">
+                <p>Üye olmadan verilen siparişlerin takibi için
+                    <a href="">tıklayınız</a>
+                    .</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/91bd71ff2c.js" crossorigin="anonymous"></script>
+</body>
+</html>
